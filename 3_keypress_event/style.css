@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0B3508;
+    color: #EBA119;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+.container {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 1rem;
+}
+
+textarea {
+    border-radius: 0.25rem;
+    border: none;
+    height: 3rem;
+    resize: none;
+    font-size: 1.5rem;
+    line-height: 3rem;
+    text-indent: 0.5rem;
+}
