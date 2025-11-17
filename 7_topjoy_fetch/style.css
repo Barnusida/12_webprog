@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ body {
+    background-color: #1C203A;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+ }
+
+ .container {
+    align-items: center;
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+ }
+
+ .image-container {
+    margin-bottom: 1rem;
+ }
+ .img-fluid {
+    max-width: 100%;
+    height: auto;
+ }
+
+ .message-box, .custom-button {
+    color: #FFF;
+    width: 100%;
+    text-align: center;
+    line-height: 5rem;
+    font-size: 1.25rem;
+    border-radius: 0.25rem;
+    border: none;
+ }
+
+ .message-box {
+    background-color: #23AF6B;
+    color: #FFF;
+    width: 100%;
+    text-align: center;
+    line-height: 5rem;
+    font-size: 1.25rem;
+    border-radius: 0.25rem;
+
+ }
+
+ .custom-button {
+    background-color: #28A745;
+    cursor: pointer;
+ }
+
+ .custom-button:hover {
+    filter: grayscale(20%);
+ }
