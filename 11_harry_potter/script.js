@@ -27,19 +27,24 @@ function displayCharacters(chars) {
         card.className = 'card'
         
         const img = document.createElement('img');
+        img.className = 'kep'
         img.src = fixImageUrls(char.image);
         img.alt = char.name;
 
         const name = document.createElement('div');
+        name.className = 'kiemelt'
         name.textContent = char.name || 'Ismeretlen';
 
         const house = document.createElement('div');
+        name.className = 'leiras'
         house.textContent = `Ház: ${char.house || 'Ismeretlen'}`;
         
         const year = document.createElement('div');
+        name.className = 'leiras'
         year.textContent = `Születési év: ${char.yearOfBirth || 'Ismeretlen'}`;
 
         const actor = document.createElement('div');
+        name.className = 'leiras'
         actor.textContent = `Színész: ${char.actor || 'Ismeretlen'}`;
 
 
