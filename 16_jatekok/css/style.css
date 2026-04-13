@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(180deg, #0B1020, #111827);
+    color: #f3f4f6;
+    padding: 2rem;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        "side content content"
+        "footer footer footer";
+    grid-template-columns: 1fr 2fr 2fr;
+    gap: 1rem;
+}
+
+header, aside, article, footer {
+    border-radius: 1rem;
+    padding: 1.5rem;
+    box-shadow: 0 0.5rem rgba(0, 0, 0, 35%);
+}
+
+header {
+    grid-area: header;
+    background: linear-gradient(90deg, #2563eb, #7c3aed);
+    border: 1px solid rgb(255, 255, 255, 8%);
+}
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    color: #dbeafe;
+}
+
+aside {
+    grid-area: side;
+    background:  #161b2e;
+    border: 1px solid rgb(255, 255, 255, 8%);
+}
+
+aside h2, h3{
+    color: #60a5fa;
+    margin-bottom: 1.5rem;
+}
+
+aside ul {
+    list-style: none;
+    margin-bottom: 1.5rem;
+}
+
+aside ul li {
+    margin-bottom: 0.75rem;
+}
+aside ul li a {
+    text-decoration: none;
+    color: #e5e7eb;
+    background:   #20263d;
+    padding: 0.7rem 0.75rem;
+    border-radius: 0.5rem;
+    display: block;
+    transition: 0.2s ease;
+}   
+
+aside ul li a:hover {
+    transform: scale(1.05);
+}
+
+.side-box {
+    background: #20263d;
+    border-radius: 0.75rem;
+    padding: 0.75rem;
+    line-height: 1.6;
+}
+
+article {
+    grid-area: content;
+    background: #0f127a;
+    border: 1px solid rgb(255, 255, 255, 8%);
+    display: grid;
+    gap: 1rem;
+}
+
+section {
+    background: linear-gradient(180deg, #1e293b,  #172003);
+    border: 1px solid rgb(255, 255, 255, 8%);
+    border-radius: 0.75rem;
+    padding: 1rem;
+}
+
+section h2 {
+    color: #f8fafc;
+    margin-bottom: 0.5rem;
+    font-size: 1.3rem;
+}
+
+section p {
+    color: #cbd5e1;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.tag {
+    display: inline-block;
+    background: #2563eb;
+    color: white;
+    padding: 0.4rem 0.7rem;
+    border-radius: 999px;
+    margin: 0 0.5rem;
+    cursor: pointer;
+    transition: 0.2 ease;
+}
+
+.tag:hover {
+    transform: scale(1.01);
+}
+
+footer {
+    grid-area: footer;
+    text-align: center;
+    background: #090d18;
+    color: #94a3b8;
+    border: 1px solid rgb(255, 255, 255, 8%);
+}
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-areas:
+            "header"
+            "side"
+            "content"
+            "footer";
+        grid-template-columns: 1fr;
+    }
+}
